@@ -2730,7 +2730,7 @@ progress {
 .form-control:focus {
   color: #495057;
   background-color: #fff;
-  border-color: #5e72e4;
+  border-color: var(--bs-blue) !important;
   outline: 0;
   box-shadow: 0 3px 9px rgba(50, 50, 9, 0), 3px 4px 8px rgba(94, 114, 228, 0.1);
 }
@@ -10193,7 +10193,7 @@ fieldset:disabled .btn {
 
 /* rtl:end:remove */
 .text-primary {
-  color: #5e72e4 !important;
+  color: var(--bs-indigo) !important;
 }
 
 .text-secondary {
@@ -20087,8 +20087,8 @@ fieldset:disabled .btn {
 
 .btn-primary:hover,
 .btn.bg-gradient-primary:hover {
-  background-color: #5e72e4;
-  border-color: #5e72e4;
+  background-color: var(--bs-indigo) !important;
+  border-color: var(--bs-indigo) !important;
 }
 
 .btn-primary .btn.bg-outline-primary,
@@ -21331,7 +21331,7 @@ fieldset:disabled .btn {
 
 label,
 .form-label {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
   color: #344767;
@@ -21360,7 +21360,7 @@ label,
 }
 
 .bg-gradient-primary {
-  background-image: linear-gradient(310deg, #5e72e4 0%, #825ee4 100%);
+  background-image: linear-gradient(310deg, #9BBEC8 0%,#164863  100%);
 }
 
 .bg-gradient-secondary {
