@@ -1,0 +1,57 @@
+<div class="sidenav-header">
+  <i
+    class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+    aria-hidden="true"
+    id="iconSidenav"
+  ></i>
+  <a class="navbar-brand m-0 text-center" routerLink="/dashboard">
+    <img
+      src="assets/img/logos/pards-round-logo.png"
+      class="navbar-brand-img logo"
+      alt="PardsGolf Logo"
+    />
+    <!-- <img src="assets/img/logos/icon.png" class="navbar-brand-img icon" alt="CaliFino"> -->
+  </a>
+</div>
+<hr class="horizontal dark mt-0" />
+<div
+  class="collapse navbar-collapse w-auto h-auto h-100"
+  id="sidenav-collapse-main"
+>
+  <ul class="navbar-nav">
+    <li class="nav-item" *ngFor="let menu of menuItems; let i = index">
+      <a
+        data-bs-toggle="collapse"
+        [routerLink]="menu.route"
+        class="nav-link no-arrow"
+        routerLinkActive="active"
+      >
+        <div
+          class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center"
+        >
+          <!-- <i [ngClass]="randomColorClass(i, menu.icon)" class="text-sm opacity-10"></i> -->
+          <img
+            src="{{ menu.icon }}"
+            class="text-sm opacity-10"
+            style="height: 15px"
+          />
+        </div>
+        <span class="nav-link-text ms-1">{{ menu.name }}</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a
+        href="https://store.pards.golf"
+        class="nav-link no-arrow"
+        routerLinkActive="active"
+      >
+        <div
+          class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center"
+        >
+          <i class="text-sm opacity-10 fas fa-shopping-cart text-primary"></i>
+        </div>
+        <span class="nav-link-text ms-1">Pards Store</span>
+      </a>
+    </li>
+  </ul>
+</div>

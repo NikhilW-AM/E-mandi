@@ -1,0 +1,14 @@
+<div class="radius-75 card position-sticky top-1 mb-4">
+  <ul class="nav flex-column bg-white border-radius-lg p-3">
+    <li class="nav-item pt-2" *ngFor="let menuItem of menuItems">
+      <a
+        routerLinkActive="active"
+        [routerLink]="activeMenu()?.route + '/' + menuItem.route"
+        class="nav-link text-body d-flex align-items-center"
+      >
+        <i [ngClass]="menuItem.icon" class="me-2 opacity-6"></i>
+        <span class="text-sm">{{ menuItem.name }}</span>
+      </a>
+    </li>
+  </ul>
+</div>

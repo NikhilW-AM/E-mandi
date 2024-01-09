@@ -1,0 +1,119 @@
+{
+  "menus": [
+    {
+      "name": "Dashboard",
+      "route": "/dashboard",
+      "icon": "/assets/icons/dashboard_svgrepo.com.svg",
+      "isUser": true,
+      "isAdmin": true,
+      "children": []
+    },
+    {
+      "name": "Users",
+      "route": "/users/1",
+      "icon": "/assets/icons/friends.svg",
+      "isUser": false,
+      "isAdmin": true,
+      "children": []
+    },
+    {
+      "name": "Courses",
+      "route": "/courses",
+      "icon": "/assets/icons/courses.svg",
+      "isUser": true,
+      "isAdmin": true,
+      "children": []
+    },
+    {
+      "name": "TeeTimes",
+      "route": "/tee-times",
+      "icon": "/assets/icons/tee_times.svg",
+      "isUser": true,
+      "isAdmin": true,
+      "children": []
+    },
+    {
+      "name": "Contests",
+      "route": "/contests",
+      "icon": "/assets/icons/contests.svg",
+      "isUser": true,
+      "isAdmin": true,
+      "children": []
+    },
+    {
+      "name": "SMS Template",
+      "route": "/sms-template",
+      "icon": "/assets/icons/sms_template.svg",
+      "isUser": false,
+      "isAdmin": true,
+      "children": []
+    },
+    {
+      "name": "Invitations",
+      "route": "/invitations",
+      "icon": "/assets/icons/invitations.svg",
+      "isUser": true,
+      "isAdmin": false,
+      "children": []
+    },
+    {
+      "name": "TeeTime chats",
+      "route": "/chats",
+      "icon": "/assets/icons/chats.svg",
+      "isUser": true,
+      "isAdmin": false,
+      "children": []
+    },
+    {
+      "name": "Messages",
+      "route": "/messages",
+      "icon": "/assets/icons/chats.svg",
+      "isUser": true,
+      "isAdmin": false,
+      "children": []
+    },
+    {
+      "name": "Friends",
+      "route": "/friends",
+      "icon": "/assets/icons/friends.svg",
+      "isUser": true,
+      "isAdmin": false,
+      "children": []
+    },
+    {
+      "name": "Mailing List",
+      "route": "/mailing-list",
+      "icon": "/assets/icons/friends-list.svg",
+      "isUser": true,
+      "isAdmin": false,
+      "children": []
+    },
+    {
+      "name": "Share Pards",
+      "route": "/share-pards",
+      "icon": "/assets/icons/invite.svg",
+      "isUser": true,
+      "isAdmin": false,
+      "children": []
+    },
+    {
+      "name": "Settings",
+      "route": "/settings",
+      "icon": "/assets/icons/settings.svg",
+      "isUser": true,
+      "isAdmin": true,
+      "children": [
+        {
+          "name": "Profile",
+          "route": "profile",
+          "icon": "ni ni-single-02"
+        },
+        {
+          "name": "Change Password",
+          "route": "change-password",
+          "icon": "fas fa-lock"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+.navbar {
+    .nav-link::after {
+        display: none !important;
+    }
+
+    .nav-link {
+        max-width: 200px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding-right: 5px;
+    }
+}
+
+.navbar-nav {
+    .dropdown-menu {
+        top: 10px !important;
+        position: absolute;
+        right: 0;
+        display: none;
+
+        .dropdown-item {
+            max-width: 280px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 5px auto;
+        }
+    }
+
+    .dropdown-menu.show {
+        display: block !important;
+    }
+
+    .dropdown-menu::before {
+        left: auto;
+        right: 28px;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .nav-item {
+        margin-left: 14px;
+    }
+
+}

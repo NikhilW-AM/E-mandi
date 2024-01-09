@@ -1,0 +1,51 @@
+#session-spinner {
+    position: fixed;
+    z-index: 99999;
+    background: rgb(6, 163, 116);
+    ;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    .spinner-grow {
+        height: 50px !important;
+        width: 50px !important;
+    }
+}
+
+.g-sidenav-hidden {
+    #sidenav-collapse-main {
+        overflow: hidden;
+
+        .nav {
+            .nav-item {
+                display: none !important;
+            }
+        }
+
+        .nav-item h6 {
+            display: none !important;
+        }
+    }
+
+}
+
+.sidenav-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav-link.no-arrow::after {
+    display: none !important;
+}
+
+.navbar-vertical.navbar-expand-xs {
+    z-index: 1000 !important;
+}
+
+.z-index-sticky {
+    z-index: 999 !important;
+}

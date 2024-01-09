@@ -1,0 +1,23 @@
+.second-nav {
+
+    .card.position-sticky {
+        top: 15px !important;
+    }
+
+    @media(min-width:992px) {
+        .card.position-sticky {
+            min-height: 300px;
+            max-height: 100vh;
+        }
+    }
+
+    .nav-item {
+        a {
+            border-radius: 0.5rem;
+        }
+
+        a.active {
+            background: #e9ecef;
+        }
+    }
+}
